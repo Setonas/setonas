@@ -135,9 +135,8 @@ paleisti(kariuomenė='localhost', uostas=8080)
 
 ![MagicSetonas](https://camo.githubusercontent.com/a02d6f960225788c96c825022e798d6e7056e8ef/68747470733a2f2f7365746f6e61732e6769746875622e696f2f4d616769635365746f6e61732f6578616d706c652e706e67)
 
-[MagicSetonas](https://github.com/Setonas/MagicSetonas) is used to highlight syntax in:
+[MagicSetonas](https://setonas.github.io/MagicSetonas/) is used to highlight syntax in:
 
-- Sublime Text
 - Atom
 - Visual Studio Code
 
