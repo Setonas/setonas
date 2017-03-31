@@ -42,6 +42,9 @@ Conceptually **Setonas** very similar to other programming languages, as took th
 docker pull setonas/setonas
 docker run -it setonas/setonas
 ```
+## How-to contributing
+You can become a core developer of **Setonas** very simply - by purchasing a T-shirt. [Buy](https://teespring.com/setonas-programming#pid=369&cid=6512&sid=front
+)
 
 ## Syntax example
 
