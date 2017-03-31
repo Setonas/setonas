@@ -25,6 +25,8 @@ It is believed that from this moment the world lives on a new calendar -
 - Chuck Noris writes on **Setonas**.
 - When you read the **Setonas** source, **Setonas** reads you.
 - In the next version planning to release **go to** with the **tail recursion**.
+- Any algorithm implemeted in **Setonas** has **O(1)** time and memory complexity.
+- **Setonas** is HashiCorp-ready language.
 
 At the moment, **Setonas** is used by such gigants as:
 - Google. **Setonas** outperformed Go on all benchmarks. Rob, we mourn.
