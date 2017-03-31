@@ -100,7 +100,7 @@ apibrėžti WSGIHandler(aplin, pradžia_atsakymas):
 
 **Setonas** has the first web framework - [butelis](https://github.com/Setonas/butelis).
 
-Here is an [example.se](https://github.com/Setonas/butelis/blob/master/example.se) with its using:
+Here is an [example.se](https://github.com/Setonas/butelis/blob/master/example/example.se) with its using:
 
 ```
 nuo butelis importas maršrutas, paleisti, prašymas, atsakymas, siųsti_failą, nutraukti, db, ButelisKibiras
