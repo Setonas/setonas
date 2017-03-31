@@ -1,0 +1,5 @@
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install -y libxml2-dev gcc make automake build-essential g++ cmake 
+script:
+  - ./configure && make && ls && ./setonas test.se

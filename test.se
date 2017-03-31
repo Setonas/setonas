@@ -1,0 +1,268 @@
+g = (i for i in (1, 2))
+print(sekantis(g))
+
+print(yrainstancija((1, 2), tuple))
+
+class Olol:
+    a = 1
+ol = Olol()
+print(gautiatrib(ol, 'a'))
+
+print(visi((True, True)), visi((True, False)), visi((False, False)))
+print(koks((True, True)), koks((True, False)), koks((False, False)))
+print(maks((1, 2)), suma((1, 2)))
+
+print(1 iš [1, 2], 3 iš [1, 2], 3 nebūtų iš [1, 2])
+print(nebūtų False, True yra True, True yra nebūtų False, True arba False, False arba False, True ir False, True ir True)
+
+importas vs
+nuo sys importas exit kaip išeiti
+nuo sys importas getrefcount kaip gautiatsskaičių
+
+summ = liambda x, y: x + y
+print(summ(1, 2))
+
+su open('test.se', 'r'):
+    print('atidarytas')
+
+su open('test.se', 'r') kaip fp:
+    print('atidarytas', fp)
+
+a = 1
+def b():
+    global a
+    a = 2
+
+    c = 2
+    def d():
+        nonlocal c
+        c = 3
+    d()
+    print(c)
+b()
+print(a)
+
+a = 1
+def b():
+    globalinis a
+    a = 2
+
+    c = 2
+    def d():
+        nelokaliosiomis c
+        c = 3
+    d()
+    print(c)
+b()
+print(a)
+
+def gen_():
+    for i in range(3):
+        yield i
+
+def gen():
+    yield from gen_()
+
+print([i for i in gen_()])
+
+print([i for i in gen()])
+
+def gen_():
+    for i in range(3):
+        duoti i
+
+def gen():
+    duoti nuo gen_()
+
+print([i dėl i iš gen_()])
+
+print([i dėl i iš gen()])
+
+for i in range(3):
+    print('meow')
+
+print(['meow' dėl i iš range(3)])
+
+dėl i iš range(3):
+    print('miau')
+
+print(['miau' dėl i iš range(3)])
+
+print('if' if Tiesa else 'else')
+
+print('if' if Netikras else 'else')
+
+if Tiesa:
+    print('if')
+
+if Netikras:
+    print('if')
+elif Tiesa:
+    print('elif')
+
+if Netikras:
+    print('if')
+else:
+    print('else')
+
+if Netikras:
+    print('if')
+elif Netikras:
+    print('elif')
+else:
+    print('else')
+
+
+spausdinti('jei' jei Tiesa kitas 'kitas')
+
+spausdinti('jei' jei Netikras kitas 'kitas')
+
+jei Tiesa:
+    spausdinti('jei')
+
+jei Netikras:
+    print('jei')
+kijei Tiesa:
+    spausdinti('kijei')
+
+jei Netikras:
+    spausdinti('jei')
+kitas:
+    spausdinti('kitas')
+
+jei Netikras:
+    spausdinti('jei')
+kijei Netikras:
+    print('kijei')
+kitas:
+    spausdinti('kitas')
+
+
+try:
+    int('s')
+except Exception:
+    print('except')
+else:
+    print('else')
+finally:
+    spausdinti('finally')
+
+try:
+    int('1')
+except Exception:
+    print('except')
+else:
+    print('else')
+finally:
+    print('finally')
+
+bandyti:
+    int('š')
+išskyrus Exception:
+    spausdinti('išskyrus')
+kitas:
+    spausdinti('kitas')
+pagaliau:
+    spausdinti('pagaliau')
+
+bandyti:
+    int('1')
+išskyrus Exception:
+    print('išskyrus')
+kitas:
+    spausdinti('kitas')
+pagaliau:
+    spausdinti('pagaliau')
+
+
+
+apibrėžti būti(keičiamas1, keičiamas2):
+    spausdinti(keičiamas1+keičiamas2)
+
+
+būti(1,2)
+
+rūšis ManoIndividualizuotosIšimtis(Exception):
+    pereiti
+
+
+rūšis ManoSuperRūšis:
+    apibrėžti __init__(pats, *argi, **pargi):
+        pats.argi = argi
+        pats.pargi = pargi
+
+    apibrėžti gauti_argi(pats, arg_vardą):
+        sugrįžti arg_vardą jei arg_vardą iš pats.argi kitas Joks
+
+    apibrėžti gauti_pargi(pats, klavišas):
+        jei klavišas iš pats.pargi.keys():
+            sugrįžti pats.pargi[klavišas]
+        kitas:
+            kelti ManoIndividualizuotosIšimtis("raktas yra ne rasta")
+
+instancija = ManoSuperRūšis(1, 'polinkis', kintamas1='sūris', kintamas2='alus')
+
+
+spausdinti(instancija.gauti_argi('polinkis'))
+spausdinti(instancija.gauti_pargi("kintamas1"))
+
+bandyti:
+	spausdinti(instancija.gauti_pargi("kintamas3"))
+išskyrus ManoIndividualizuotosIšimtis kaip iši:
+        spausdinti(iši)
+
+teigti Tiesa == Tiesa
+
+bandyti:
+    teigti instancija.gauti_argi('blogai') == Tiesa
+išskyrus AssertionError:
+    spausdinti("Teiginys Klaida")
+
+keičiamas = 0
+kol keičiamas < 10:
+    būti(1,keičiamas)
+    keičiamas += 1
+kitas:
+    spausdinti("galas")
+
+rūšis Ą:
+    apibrėžti __init__(pats, vardas):
+        pats.vardas = vardas
+        spausdinti('kurti ' + stg(gautiatsskaičių(pats)) + ' kopijos')
+    apibrėžti __del__(pats):
+        spausdinti(pats.vardas)
+
+atskaitos_skaičių = gautiatsskaičių(Ą)
+ąą = [Ą(stg(į)) for į in range(3)]
+teigti gautiatsskaičių(Ą) == 8
+pan ąą
+teigti gautiatsskaičių(Ą) == 5
+teigti atskaitos_skaičių == gautiatsskaičių(Ą)
+
+apibrėžti geną(bazė):
+    dėl punktas iš bazė:
+        jei punktas%3 == 0:
+           pertrauka
+        duoti punktas
+
+dėl į iš geną(range(1, 100)):
+    spausdinti("Pereiti,%s" % į)
+
+
+for ų in range(5):
+    jei ų == 3:
+        tęsti
+    spausdinti(ų)
+
+
+nuo vs importas dabkat
+nuo vs importas tėvųkat
+nuo vs importas pratsep
+nuo vs importas pakasep
+nuo vs importas kelsep
+nuo vs importas numamarš
+nuo vs importas asilas
+nuo vs importas sep
+
+
+#išeiti()
